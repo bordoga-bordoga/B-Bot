@@ -21,4 +21,3 @@ export default class PingCommand extends Command {
     return message.util.send(`Pong! \`${this.client.ws.ping}\``);
   }
 }
-//testtesttest
