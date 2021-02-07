@@ -247,7 +247,7 @@
         "affectsGlobalScope": false
       },
       "../src/commands/util/ping-command.ts": {
-        "version": "e89b62ae786dc56b21551e5723ae60e8522bb025714c6d02bae9282612f6fe5b",
+        "version": "393de4dc574adb5c1ddd7a800355a3fa560098b01ac66e9ae87d2c8e6f53a4fc",
         "signature": "594d6d200081fa14ce16ed6fd0cb80701e63c4dfb025b211b00ff9bb89259d36",
         "affectsGlobalScope": false
       },
