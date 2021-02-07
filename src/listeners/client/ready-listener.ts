@@ -10,6 +10,6 @@ export default class ReadyListener extends Listener {
   }
 
   public exec(): void {
-    console.log(`🔴 ${this.client.user.tag} is now online and ready! 🔴`);
+    console.log('\x1b[1m', `🔴 ${this.client.user.username} is now online and ready! 🔴`);
   }
 }

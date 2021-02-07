@@ -18,6 +18,6 @@ export default class PingCommand extends Command {
   }
 
   public exec(message: Message): Promise<Message> {
-    return message.util.send(`Pong! \`${this.client.ws.ping}\``);
+    return message.util.send(`Pong!  \`${this.client.ws.ping} ms\``);
   }
 }
