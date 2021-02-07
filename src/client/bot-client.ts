@@ -1,4 +1,4 @@
-import { AkairoClient, CommandHandler, ListenerHandler } from "discord-akairo";
+import { AkairoClient, CommandHandler, ListenerHandler, InhibitorHandler } from "discord-akairo";
 import { User, Message } from "discord.js";
 import { join } from "path";
 import { prefix, owners } from "../config";
@@ -22,7 +22,8 @@ export default class BotClient extends AkairoClient {
   });
 
   public commandHandler: CommandHandler = new CommandHandler(this, {
-    directory: prefix,
+    directory: join(__dirname, "..", "commands"),
+    prefix: prefix,
     allowMention: true,
     handleEdits: true,
     commandUtil: true,

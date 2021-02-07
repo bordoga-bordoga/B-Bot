@@ -217,7 +217,7 @@
         "affectsGlobalScope": true
       },
       "../src/config.ts": {
-        "version": "35426f7e67e1f7e01e832317b6a019d923096d1ab1ecd1b0ecf4ea6a80b4ea6a",
+        "version": "66e0eb1de923a34184cd426b61457f20a60c14566d75f27527185fbcb5c36796",
         "signature": "5e0d99878e4196298148f5d2cadc9effa8c684581799fd944722ab02d02669bd",
         "affectsGlobalScope": false
       },
@@ -237,7 +237,7 @@
         "affectsGlobalScope": false
       },
       "../src/client/bot-client.ts": {
-        "version": "164f10a54095450cb01fb8f77dd8f21cf3e1a84b180ef05c6d491b87b60188e0",
+        "version": "ee6a75514edd4e461fde629684ed7c51d38694711471cec9214395558924d154",
         "signature": "315a8df744fa1c48a252bd1c8e6bf4a47714b1ed0e1bf3a6f9bd8d7668244a78",
         "affectsGlobalScope": false
       },
