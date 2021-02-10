@@ -23,10 +23,6 @@ export default class Announcements extends Command {
 
   public async exec(message: Message): Promise<void | Message> {
 
-    if (user.message === "post") {
-      n === "6"
-    }
-
     const Announcement_Message = message.content.substring(0);
     const destination = this.client.channels.cache.get('782491581429055519');
 
