@@ -7,7 +7,7 @@ export default class TestCommand extends Command {
       aliases: ["test"],
       category: "test",
       description: {
-        content: "test",
+        content: "test lol",
         usage: "test",
         examples: [
           "test"
@@ -18,6 +18,6 @@ export default class TestCommand extends Command {
   }
 
   public exec(message: Message): Promise<Message> {
-    return message.util.send('**` ─────── `**     test     **` ─────── `**');
+    return message.util.send(`**\` ─────── \`**     test     **\` ─────── \`**`);
   }
 }
