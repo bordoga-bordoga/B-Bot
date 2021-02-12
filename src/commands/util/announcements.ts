@@ -23,12 +23,16 @@ export default class Announcements extends Command {
 
   public async exec(message: Message): Promise<void | Message> {
 
-    const Announcement_Message = message.content.substring(0);
+    const Announcement_Message = message.content.substring(3);
     const destination = this.client.channels.cache.get('782491581429055519');
 
     (destination as TextChannel).send(Announcement_Message + '\n\n<@&711229532576677939>').then(ghostPing => {
       ghostPing.delete()
     });
+
+    /*this.client.on('messageReactionAdd', (reaction, user) => {
+      console.log('Reacted');
+    });*/
 
     const announcement_Embed = new MessageEmbed()
       .setAuthor(message.author.username, message.author.avatarURL())
