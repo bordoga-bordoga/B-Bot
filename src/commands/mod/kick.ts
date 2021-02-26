@@ -4,11 +4,11 @@ import { Message, GuildMember } from "discord.js";
 
 export default class BanCommand extends Command {
   public constructor () {
-    super("ban", {
-      aliases: ["ban", "b"],
+    super("kick", {
+      aliases: ["kick", "k"],
       category: "mod",
       channel: "guild",
-      clientPermissions: ["BAN_MEMBERS"],
+      clientPermissions: ["KICK_MEMBERS"],
       args: [{ id: "member", type: "member" }],
     });
   }
@@ -19,11 +19,12 @@ export default class BanCommand extends Command {
     { member }: { readonly member: GuildMember },
   ): Promise<string> {
     return member
-      .ban()
-      .then((bannedMember) =>
+      .kick()
+      .then((kickedMember) =>
         Promise.resolve(
-          `<@${message.author.id}> has banned **${bannedMember.user.tag}**`,
+          `<@${message.author.id}> has kicked **${kickedMember.user.tag}**`,
         ),
       );
   }
 }
+

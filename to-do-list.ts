@@ -19,6 +19,7 @@
 *   c. ...
 * 5. Help command.
 * 6. Logger.
+* //7. Welcome message.
 
 ﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋
 * ───\ FUN \───
@@ -52,5 +53,10 @@
 * ───\ TEST \───
 
 * 1.
+
+﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋
+* ───\ Ember \───
+
+* //1. Self assign bumper role.
 
 */

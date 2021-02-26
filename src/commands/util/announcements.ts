@@ -17,23 +17,22 @@ export default class Announcements extends Command {
           "?p test"
         ]
       },
-      ratelimit: 3,
     });
   }
 
 
   public async exec(message: Message): Promise<void | Message> {
 
-    const Announcement_Message = message.content.slice(prefix.length).replace(/announce|post|p/i, '');
+    const announcementMessage = message.content.slice(prefix.length).replace(/announce|post|p/i, '');
     const destination = this.client.channels.cache.get('782491581429055519');
 
     // The announcements embed.
-    const announcement_Embed = new MessageEmbed()
+    const announcementEmbed = new MessageEmbed()
       .setAuthor(message.author.username, message.author.avatarURL())
       .setTitle('\`[ server name ]\` announcements')
-      .setDescription('⠀\n' + Announcement_Message + '\n⠀')
+      .setDescription('⠀\n' + announcementMessage + '\n⠀')
       .setFooter('This message notified [ server name ] members \nTo unsubscribe: ❎ \nTo subscribe: ✅');
-    (destination as TextChannel).send(announcement_Embed).then(sentEmbed => {
+    (destination as TextChannel).send(announcementEmbed).then(sentEmbed => {
       sentEmbed.react('❎').then(() => sentEmbed.react('✅'));
     });
 
@@ -53,12 +52,15 @@ export default class Announcements extends Command {
       return;
     }*/
 
-
     // Ghost Ping message.
-    (destination as TextChannel).send(Announcement_Message + '\n\n<@&711229532576677939>').then(ghostPing => {
+    //if (prefix.startsWith('!')) {
+    (destination as TextChannel).send(announcementMessage + '\n\n<@&711229532576677939>').then(ghostPing => {
       ghostPing.delete()
     });
+    /*} else {
+      return;
+    }*/
+
+    console.log();
   }
 }
-
-

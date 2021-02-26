@@ -15,7 +15,6 @@ export default class AvatarCommand extends Command {
           "av bordoga_bordoga size = 2048"
         ]
       },
-      ratelimit: 3,
       args: [
         {
           id: "member",
