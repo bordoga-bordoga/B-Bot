@@ -7,10 +7,10 @@
 
 * //1. Multiple responses for ping command.
 * 2. Announcements command.
-*   a. Reaction roles.
-*   b. No ping announcements.
-*   c. Delete most recent announcement.
-*   d. Edit most recent announcement.
+*   //a. Reaction roles.
+*   //b. No ping announcements.
+*   c. Edit most recent announcement.
+*   d. Delete most recent announcement.
 *   e. Don't send empty announcements.
 *   f. Add images to announcements.
 * 4. VC mover.

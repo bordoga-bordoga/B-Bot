@@ -4,8 +4,8 @@ export default class ReadyListener extends Listener {
   public constructor () {
     super("ready", {
       emitter: "client",
-      event: "ready",
-      category: "client"
+      category: "client",
+      event: "ready"
     });
   }
 
